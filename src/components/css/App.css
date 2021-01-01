@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --general:grey;
+}
+/* 
+for small screen */
+
+.card {
+   cursor: pointer;
+   margin-top: 2em;
+}
+.container .music {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.container .music .first{
+    margin-right: auto;
+    
+}
+.container .music .first > h3 {
+    font-size: 19px;
+    font-weight: 600;
+}
+.container .page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  
+}
