@@ -1,5 +1,10 @@
 import React from 'react';
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
+import { FaMusic , FaPhotoVideo} from "react-icons/fa";
+import { MdPhotoSizeSelectActual } from "react-icons/md";
+
+import { IoDocumentTextSharp } from "react-icons/io";
+
 import {Link } from 'react-router-dom';
 const Pick=()=>{
    const style={
@@ -32,7 +37,7 @@ const Pick=()=>{
                                                     teat
                                                 </Card.Title>
                                                 <Card.Body>
-                                                    music
+                                                   <FaMusic/>
                                                 </Card.Body>
                                             </Card>
                                        </Link>
@@ -44,7 +49,7 @@ const Pick=()=>{
                                                 test
                                             </Card.Title>
                                             <Card.Body>
-                                               video
+                                               <FaPhotoVideo/>
                                             </Card.Body>
                                         </Card>
                                       </Link>
@@ -56,7 +61,7 @@ const Pick=()=>{
                                                 test
                                             </Card.Title>
                                             <Card.Body>
-                                                photo
+                                                <MdPhotoSizeSelectActual/>
                                             </Card.Body>
                                         </Card>
                                      </Link>

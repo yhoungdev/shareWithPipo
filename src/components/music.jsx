@@ -38,7 +38,7 @@ const Music=()=>{
                             <input type="file" name="music" id="song" onChange={uplaodMp} style={{display:'none'}}/>
                         </form> <br/>
                      
-                        {cloud === '' ? '' : <Button onClick={backUp}>upload</Button>}
+                        {cloud === '' ? '' : <Button>upload</Button>}
                     </span>
                     <span className="ml-3">icon</span>
                 </div>
