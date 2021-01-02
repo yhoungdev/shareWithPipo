@@ -33,3 +33,9 @@ for small screen */
     justify-content: center;
   
 }
+/* //for the large screen  */
+@media screen and  (min-width:1000px) and (max-width:1020px){
+   .side {
+       background-color: red;
+   }
+}

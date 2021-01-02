@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
-
 import {Link } from 'react-router-dom';
+import { FaCloudUploadAlt } from "react-icons/fa";
+
 
 const Music=()=>{
     //now for the upload and match the type
@@ -33,7 +34,7 @@ const Music=()=>{
                     </span>
                     <span className="mr-5">
                         <form action="" onSubmit={form}>
-                            <label htmlFor="song" >load</label>
+                            <label htmlFor="song" ><FaCloudUploadAlt/></label>
                             
                             <input type="file" name="music" id="song" onChange={uplaodMp} style={{display:'none'}}/>
                         </form> <br/>

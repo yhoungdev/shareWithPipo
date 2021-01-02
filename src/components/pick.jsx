@@ -2,9 +2,8 @@ import React from 'react';
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
 import { FaMusic , FaPhotoVideo} from "react-icons/fa";
 import { MdPhotoSizeSelectActual } from "react-icons/md";
-
 import { IoDocumentTextSharp } from "react-icons/io";
-
+import { TiDocumentText } from "react-icons/ti";
 import {Link } from 'react-router-dom';
 const Pick=()=>{
    const style={
@@ -16,7 +15,7 @@ const Pick=()=>{
                 <section className="top">
                     <Container>
                       <Row>
-                        <Col className="col-lg-6 col-md-12  col-12">
+                        <Col className="col-lg-6 col-md-12  col-12 side">
                         <div className="part">
                                 <span className="icons" style={{display:'flex',justifyContent:'space-between'}}>
                                     <p>back</p>
@@ -73,7 +72,7 @@ const Pick=()=>{
                                                 test
                                             </Card.Title>
                                             <Card.Body>
-                                               doc
+                                               <TiDocumentText/>
                                             </Card.Body>
                                         </Card>
                                         </Link>
