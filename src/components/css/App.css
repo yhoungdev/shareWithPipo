@@ -5,6 +5,35 @@
 }
 :root {
     --general:grey;
+    --pur:rgb(176, 60, 255);
+}
+#with {
+    font-weight: 501;
+    color:#fff;
+}
+.audio {
+    background: #3e82da10;
+    border: none;
+    color: rgb(33, 115, 163);
+}
+.video {
+    background-color: rgba(146, 11, 236, 0.068);
+    border: none;
+    color: rgb(236, 11, 236);
+}
+.doc {
+    border: none;
+    background-color: rgba(105, 240, 150, 0.061);
+    color: rgb(7, 184, 95);
+}
+
+.photo {
+    background-color: rgba(44, 179, 241, 0.089);
+    border: none;
+    color: rgb(13, 96, 250);
+}
+body {
+    overflow: hidden;
 }
 /* 
 for small screen */
@@ -34,8 +63,20 @@ for small screen */
   
 }
 /* //for the large screen  */
-@media screen and  (min-width:1000px) and (max-width:1020px){
-   .side {
-       background-color: red;
+@media screen and  (min-width:700px) and (max-width:2000px){
+   .part {
+       background-color: var(--pur);
+       height: 100vh;
    }
+}
+/* 
+for mobile screen */
+@media screen and (min-width:300px) and (max-width:650px){
+  .part {
+      height: 20em;
+      background-color: var(--pur);
+      border-radius: 0 0 29px 29px;
+     
+   
+  }
 }

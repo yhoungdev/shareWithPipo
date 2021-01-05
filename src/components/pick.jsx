@@ -7,13 +7,16 @@ import { TiDocumentText } from "react-icons/ti";
 import {Link } from 'react-router-dom';
 const Pick=()=>{
    const style={
-        width:90
+        width:300
+    }
+    const icon={
+        fontSize:30
     }
     return (
         <>
            
                 <section className="top">
-                    <Container>
+            
                       <Row>
                         <Col className="col-lg-6 col-md-12  col-12 side">
                         <div className="part">
@@ -21,71 +24,85 @@ const Pick=()=>{
                                     <p>back</p>
                                     <p>menu</p>
                                 </span>
-                                <div className="cont" style={style} >
-                                    <h3>your objective</h3>
+                                <div className="cont mt-4" style={ style} >
+                                    <h3 id="with" className="ml-2" >SHARE WITH</h3>
+                                 
+                                    <p style={{color:'yellow '}} className="ml-2">
+                                        people and the general public , files you will like them to know about 
+                                    </p>
                                 </div>
                             </div>
                         </Col>
                         <Col className="">
+                      
+                       <Container>
+                       <h5 className="text-muted mt-3" > PICK THE FILE TYPE</h5>
                             <div className="sec_part text-center">
+                         
                                 <Row>
+                                  
                                     <Col >
                                        <Link to="music">
-                                        <Card className="pt-2 pl-4 pr-4">
-                                                <Card.Title>
-                                                    teat
-                                                </Card.Title>
+                                        <Card className="p-3 audio">
+                                              
                                                 <Card.Body>
-                                                   <FaMusic/>
+                                                   <FaMusic style={icon}/>
                                                 </Card.Body>
+                                                <small className="text-muted">shared Audio</small>
                                             </Card>
                                        </Link>
                                     </Col>
                                     <Col>
-                                      <Link to="">
-                                      <Card  className="pt-2 pl-4 pr-4">
-                                            <Card.Title>
-                                                test
-                                            </Card.Title>
+                                      <Link to="pdf">
+                                      <Card  className="p-3 video" >
+                                         
                                             <Card.Body>
-                                               <FaPhotoVideo/>
+                                               <FaPhotoVideo style={icon}/>
                                             </Card.Body>
+                                            <small className="text-muted">share GIF </small>
                                         </Card>
                                       </Link>
                                     </Col>  
                                     <Col>
                                      <Link to="photo">
-                                     <Card  className="pt-2 pl-4 pr-4">
-                                            <Card.Title>
-                                                test
-                                            </Card.Title>
+                                     <Card  className="p-3 photo" >
+                                       
                                             <Card.Body>
-                                                <MdPhotoSizeSelectActual/>
+                                                <MdPhotoSizeSelectActual style={icon}/>
                                             </Card.Body>
+                                            <small className="text-muted"> shared photo</small>
                                         </Card>
                                      </Link>
                                     </Col>    
                                     <Col>
                                         <Link to="doc">
-                                        <Card  className="pt-2 pl-4 pr-4">
-                                            <Card.Title>
-                                                test
-                                            </Card.Title>
+                                        <Card  className="p-3 doc" >
+                                          
                                             <Card.Body>
-                                               <TiDocumentText/>
+                                               <TiDocumentText style={icon}/>
                                             </Card.Body>
+                                            <small className="text-muted">shared PDF</small>
                                         </Card>
                                         </Link>
                                     </Col>     
                                 </Row>                                                     
 
 
+                                <Row>
+
+                                    
+                                    
+                                </Row>
+
+
 
                             </div>
+                            </Container>
                         </Col>
                       </Row>
-                    </Container>
+                
                 </section>
+    
             
         
         </>

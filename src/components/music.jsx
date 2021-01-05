@@ -34,7 +34,7 @@ const Music=()=>{
                     </span>
                     <span className="mr-5">
                         <form action="" onSubmit={form}>
-                            <label htmlFor="song" ><FaCloudUploadAlt/></label>
+                            <label htmlFor="song" style={{cursor:'pointer'}} ><FaCloudUploadAlt/></label>
                             
                             <input type="file" name="music" id="song" onChange={uplaodMp} style={{display:'none'}}/>
                         </form> <br/>
