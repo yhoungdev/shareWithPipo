@@ -15,7 +15,7 @@ const Photo=()=>{
         let pattern=/.\png|.\jpg|.\jpeg/ig
           //check if the pattern matches 
           if(imgFile.name.match(pattern)){
-              console.log('matchedd')
+              setSuccess(imgFile.name)
           } else {
               setErr(obj)
           }
@@ -40,8 +40,10 @@ const Photo=()=>{
                 </div>
                 <main>
                     <h4 className="text-muted"> list of iamges shared</h4>
-                    <small>{err}</small>
+                    <small style={{color:'red'}}>{err}</small>
+                    <small style={{color:'green'}}>{success}</small>
                     <div className="songs">
+                       
                         
                           
                                 
