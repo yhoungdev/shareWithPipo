@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 import {Link } from 'react-router-dom';
 const Doc= e =>{
@@ -32,7 +33,7 @@ const Doc= e =>{
                     </span>
                     <span className="mr-5">
                         <form action="" >
-                            <label htmlFor="doc"  >load</label>
+                            <label htmlFor="doc"  ><FaCloudUploadAlt style={{cursor:'pointer'}}/></label>
                             <input type="file" name="music" id="doc" style={{display:'none'}} onChange={upload}/>
                         </form>
                     </span>

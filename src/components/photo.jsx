@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
 import {Link } from 'react-router-dom';
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const Photo=()=>{
     const form=ev=> ev.preventDefault();
@@ -31,7 +32,7 @@ const Photo=()=>{
                     </span>
                     <span className="mr-5">
                         <form action="" onSubmit={form}>
-                            <label htmlFor="img" style={{cursor:'pointer'}}>load</label>
+                            <label htmlFor="img" style={{cursor:'pointer'}}><FaCloudUploadAlt/></label>
                             <input type="file" name="music" id="img" style={{display:'none'}} onChange={loadImg}/>
                         </form>
                     </span>

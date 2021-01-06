@@ -5,6 +5,8 @@ import { MdPhotoSizeSelectActual } from "react-icons/md";
 import { IoDocumentTextSharp } from "react-icons/io";
 import { TiDocumentText } from "react-icons/ti";
 import {Link } from 'react-router-dom';
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { BiMenuAltRight } from "react-icons/bi";
 const Pick=()=>{
    const style={
         width:300
@@ -12,8 +14,13 @@ const Pick=()=>{
     const icon={
         fontSize:30
     }
+    let fa={
+        cursor:'pointer',
+        color:'white',
+        fontSize:25
+    }
     return (
-        <>
+        <> 
            
                 <section className="top">
             
@@ -21,8 +28,8 @@ const Pick=()=>{
                         <Col className="col-lg-6 col-md-12  col-12 side">
                         <div className="part">
                                 <span className="icons" style={{display:'flex',justifyContent:'space-between'}}>
-                                    <p>back</p>
-                                    <p>menu</p>
+                                    <p><Link to="/"><IoMdArrowRoundBack style={fa} className="ml-2"/></Link></p>
+                                    <p><Link to="/"><BiMenuAltRight style={fa} className="mr-2"/></Link></p>
                                 </span>
                                 <div className="cont mt-4" style={ style} >
                                     <h3 id="with" className="ml-2" >SHARE WITH</h3>
@@ -98,6 +105,11 @@ const Pick=()=>{
 
                             </div>
                             </Container>
+                           <footer className="mt-5">
+                                <center>
+                                <small className="text-muted mt-5">created by Obiabo</small>
+                                </center>
+                           </footer>
                         </Col>
                       </Row>
                 
