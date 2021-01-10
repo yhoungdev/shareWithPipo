@@ -39,16 +39,12 @@ const Photo=()=>{
                     <span className="ml-3">icon</span>
                 </div>
                 <main>
-                    <h4 className="text-muted"> list of iamges shared</h4>
                     <small style={{color:'red'}}>{err}</small>
                     <small style={{color:'green'}}>{success}</small>
+                    <h4 className="text-muted"> list of imges shared</h4>
+                  
                     <div className="songs">
-                       
-                        
-                          
-                                
-                           
-                                
+             
                     </div>
 
                 </main>

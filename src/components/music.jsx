@@ -43,7 +43,7 @@ const Music=()=>{
                     </span>
                     <span className="ml-3">icon</span>
                 </div>
-                {cloud}
+                <small> {cloud}</small>
                 
                 <main>
                     <h4 className="text-muted"> list of songs shared</h4>

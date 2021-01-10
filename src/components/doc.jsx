@@ -40,11 +40,15 @@ const Doc= e =>{
                     <span className="ml-3">icon</span>
                 </div>
                 <main>
+                              <small style={{color:'green'}}>{success}</small>
+                            <small style={{color:'red'}}>{err}</small>
                     <h4 className="text-muted"> list of documets shared</h4>
+
+                    {/* now set the ipload button */}
+                        {success !== '' ? <Button>upload</Button> : ''}
                     <div className="songs">
                           
-                              {success}
-                            <small style={{color:'red'}}>{err}</small>
+                 
                            
                                 
                     </div>
