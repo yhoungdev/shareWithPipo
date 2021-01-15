@@ -3,7 +3,7 @@ import { Button , Card , Row , Col, Container } from 'react-bootstrap';
 import {Link } from 'react-router-dom';
 import { FaCloudUploadAlt } from "react-icons/fa";
 
-
+var db;
 const Music=()=>{
     //now for the upload and match the type
   
@@ -13,6 +13,10 @@ const Music=()=>{
          let matchX=new RegExp(/.\mp3/)
           if(fileAll.name.match(matchX)) {
                 setCloud(`name: ${fileAll.name}`)
+
+                db = e =>{
+                    alert(0)
+                }
           } else {
               
           }
@@ -39,7 +43,7 @@ const Music=()=>{
                             <input type="file" name="music" id="song" onChange={uplaodMp} style={{display:'none'}}/>
                         </form> <br/>
                      
-                        {cloud === '' ? '' : <Button>upload</Button>}
+                        {cloud === '' ? '' : <Button onClick={uplaodMp}>upload</Button>}
                     </span>
                     <span className="ml-3">icon</span>
                 </div>

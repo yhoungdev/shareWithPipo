@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button , Card , Row , Col, Container } from 'react-bootstrap';
 import {Link } from 'react-router-dom';
 import { FaCloudUploadAlt } from "react-icons/fa";
-
+var db;
 const Photo=()=>{
     const form=ev=> ev.preventDefault();
     //now set the hooks 
@@ -16,6 +16,15 @@ const Photo=()=>{
           //check if the pattern matches 
           if(imgFile.name.match(pattern)){
               setSuccess(imgFile.name)
+
+              db=()=>{
+                 let storageRef=firebase.storage().ref(`Photo/${imgFile.name}`)
+                 let other=storageRef.put(imgFile);
+                 other.on('state_chane', snapshot=>{
+                     console.log('uploaded ')
+                 })
+              }
+              
           } else {
               setErr(obj)
           }
@@ -41,10 +50,11 @@ const Photo=()=>{
                 <main>
                     <small style={{color:'red'}}>{err}</small>
                     <small style={{color:'green'}}>{success}</small>
+                   {success === '' ? '':<Button onClick={db}>upload</Button>}
                     <h4 className="text-muted"> list of imges shared</h4>
                   
                     <div className="songs">
-             
+                 
                     </div>
 
                 </main>

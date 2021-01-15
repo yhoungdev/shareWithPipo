@@ -60,7 +60,7 @@ const Pick=()=>{
                                        </Link>
                                     </Col>
                                     <Col>
-                                      <Link to="pdf">
+                                      <Link to="gif">
                                       <Card  className="p-3 video" >
                                          
                                             <Card.Body>
